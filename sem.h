@@ -58,7 +58,7 @@ int sem_del(SEM *sem);
  * sem           handle of the semaphore to decrement
  */
 
-void P(SEM *sem);
+void wait(SEM *sem);
 
 /* V (signal) operation.
  *
@@ -70,7 +70,7 @@ void P(SEM *sem);
  * sem           handle of the semaphore to increment
  */
 
-void V(SEM *sem); 
+void signal(SEM *sem); 
 
 #endif
 
